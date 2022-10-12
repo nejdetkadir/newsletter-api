@@ -4,31 +4,8 @@
 ![Rails Version](https://img.shields.io/badge/rails_version-7.0.3.1-c52f24.svg)
 [![Swagger documentation](https://img.shields.io/badge/swagger_documentation-84e92c.svg?&logo=swagger&logoColor=black)](docs/SWAGGER.md)
 
-# Rails API Boilerplate
-![cover](docs/cover.jpeg)
-
-# How to Works?
-```mermaid
-flowchart TD
-  R[Request] --> C[Application Controller]
-  C --> O[Application Operation]
-  O -- Validate Params --> AC[Application Contract]
-  O -- Application Contract returned success?--> S[Application Service]
-  AC -- Validation success? --> O[Application Operation]
-  AC -- Validation failed? --> E[Contract Errors]
-  E --> RE
-  S -- Process successful? --> RS[Resource]
-  S -- Process failed? --> OE[Resource Errors]
-  OE --> RE[Response]
-  RS --> RE
-  RE -- Returns --> C
-```
-
-# Documentations
-- [Swagger](docs/SWAGGER.md)
-- [Service generator](docs/SERVICE.md)
-- [Contract generator](docs/CONTRACT.md)
-- [Search & Filter & Sort](docs/RANSACK.md)
+# Newsletter API
+![db](docs/db.jpg)
 
 # Installation
 ## Prerequisites
